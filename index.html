@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Supratim Shaud</div>
+    <ul class="nav-links" id="desktop-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  
+  <nav id="hamburger-nav">
+    <ul class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </nav>
+  
+  
+  <!-- ✅ Correctly closed nav -->
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic-2.png" alt="Supratim Shaud profile picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello I am</p>
+        <h1 class="title">Supratim Shaud</h1>
+        <p class="section__text__p2">Mechanical and Aerospace Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV 
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+            Contact Info
+          </button>
+        </div>
+        
+
+        <div id="social-container">
+            <img 
+            src="./assets/linkedin.png" alt="My Linkedin Profile"
+            class ="icon" onclick="location.href= 'https://linkedin.com/in/supratim-shaud-ab1480214/'">
+            <img 
+            src="./assets/github.png" alt="My Github Profile"
+            class ="icon" onclick="location.href= 'https://github.com/'">
+        
+        </div>
+
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" 
+        class="about-pic only-about-pic">
+
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" 
+            alt="experience icon" 
+            class="icon">
+            <h3>Experience</h3>
+            <p>2+ years <br>Mechanical Engineering Student</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" 
+            alt="education icon" 
+            class="icon">
+            <h3>Education</h3>
+              <p>Pursuing B.Sc. Bachelor Degree in Mechanical and Aerospace Engineering</p>
+          </div>
+          </div>
+          <div class="text-container">
+            <p> I am Supratim Shaud currently pursuing a Bachelor in Mechanical Engineering student with a minor in Aerospace Engineering at Northeastern University,
+              with a strong interest in using technology to build a cleaner, more efficient future. I am particularly passionate about making commercial aviation 
+              more sustainable by exploring and applying clean energy solutions. 
+              Whether it's improving aircraft design, enhancing propulsion efficiency, or developing innovative energy systems, 
+              I want to be part of the next generation of engineers addressing the environmental impact of air travel. I thrive on solving difficult problems, thinking critically, 
+              and learning from hands-on experiences that challenge conventional thinking. My ultimate goal is to contribute to real-world advancements that balance performance with environmental responsibility, 
+              while continuously growing as an engineer and problem solver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img id="section-arrow" src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+  
+    <div class="experience-container">
+      <div class="experience-subcontainer">
+        <h2>Mechanical Engineering</h2>
+        <div class="experience-content">
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>Solidworks</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>AutoCad</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>CREO Paramatrics</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>Waterjet Cutting</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>CNC Machining</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>Arduino</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>Keyence Inspection</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>Microscopy</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>Material Analysis</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="details-containers">
+        <h2 class="experience_sub-title">Coding</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>HTML</h3>
+              <p>Beginner</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>CSS</h3>
+              <p>Beginner</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>C++</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>MATLAB</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Beginner</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" 
+            alt="Experience Icon" class="icon" />
+            <div>
+              <h3>MediaQueries</h3>
+              <p>Beginner</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section id="Projects">
+    <!-- Section Header -->
+    <div class="project-header">
+      <p>Browse My</p>
+      <h1>Projects</h1>
+    </div>
+  
+    <!-- Project Card -->
+    <div class="experience-details-container">
+      <div class="detail-container color-container">
+        <h2 class="experience-sub-title project-title">Custom Arbor Press</h2>
+  
+        <!-- Images -->
+        <div class="article-container project-images">
+          <img src="./assets/arbor1.png" alt="Project 1 Alternate" class="project-img">
+          <img src="./assets/arbor2.png" alt="Project 1 Alternate" class="project-img">
+          <img src="./assets/arbor3.png" alt="Project 1 View 3" class="project-img">
+        </div>
+  
+        <!-- Columns -->
+        <div class="project-columns">
+          <div class="column">
+            <h3>What?</h3>
+            <ul>
+              <li>Able to load projectiles into the magazine with an assist from a handle  </li>
+              <li>Allows exactly 5 projectiles to come in at a time allowing fcatory worker to fill every magazine with correct number of projectile</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>How?</h3>
+            <ul>
+              <li>3D designed components in Creo</li>
+              <li>Used wood to shape the base of teh arbor press and used a spring which allows the handle to go back to neutral position
+                after every use </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Results</h3>
+            <ul>
+              <li>Decrease teh time to load magazine by 80%</li>
+              <li>Allows the worker to spend less time loading which therefore allows more testing and leads to more shipping of products </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Buttons -->
+        <div class="btn-container">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+<div class="experience-details-container">
+  <div class="detail-container color-container">
+    <h2 class="experience-sub-title project-title">Speed Magazine Loader</h2>
+
+    <!-- Images -->
+    <div class="article-container project-images">
+      <img src="./assets/ammo1.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/ammo2.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/ammo3.png" alt="Project 1 View 3" class="project-img">
+    </div>
+
+    <!-- Columns -->
+    <div class="project-columns">
+      <div class="column">
+        <h3>What?</h3>
+        <ul>
+          <li>A box with nose plungers which allows only 5 projectile to go in at a time</li>
+          <li>A plunger with flat face allows a equal force in the projectile to allow them to be loaded in magazine</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>How?</h3>
+        <ul>
+          <li>Designed in Creo and 3D printed in PLA</li>
+          <li>Plungers with spring allows an equal distribution of force when loading projectile</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Results</h3>
+        <ul>
+          <li>Increased factory safety by 43%</li>
+          <li>Lower cost implementation due to only usage of PLA</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="experience-details-container">
+  <div class="detail-container color-container">
+    <h2 class="experience-sub-title project-title">O-ring install Mandrel tool</h2>
+
+    <!-- Images -->
+    <div class="article-container project-images">
+      <img src="./assets/mandrel1.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/mandrel2.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/mandrel3.png" alt="Project 1 View 3" class="project-img">
+    </div>
+
+    <!-- Columns -->
+    <div class="project-columns">
+      <div class="column">
+        <h3>What?</h3>
+        <ul>
+          <li>Able to assist the factory workers to install O-ring in part of hand guns</li>
+          <li>Shoulders in the tool allows O-ring to rest while being installed in parts </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>How?</h3>
+        <ul>
+          <li>Back engineered a current production through measurement from Keyance Inspection </li>
+          <li>Used Creo parametrics to 3D design the Mandrel</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Results</h3>
+        <ul>
+          <li>Increased efficcinecy in factory workers through ease of usage </li>
+          <li>Manufactured through stanless steel allowing the part to be sturdy while keeping the cost low</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="experience-details-container">
+  <div class="detail-container color-container">
+    <h2 class="experience-sub-title project-title">Hammer Spring Install Tool</h2>
+
+    <!-- Images -->
+    <div class="article-container project-images">
+      <img src="./assets/hammert1.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/hammert2.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/hammert3.png" alt="Project 1 View 3" class="project-img">
+    </div>
+
+    <!-- Columns -->
+    <div class="project-columns">
+      <div class="column">
+        <h3>What?</h3>
+        <ul>
+          <li>Allow factory workers to install the hammer spring in the rear mechanism at an ease</li>
+          <li>the handle allows the factory worker to hold the spring at an tension while installing 
+            preventing any slips </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>How?</h3>
+        <ul>
+          <li>Designed the base in Creo Parametric to hold two pin gauges</li>
+          <li>Forced the gauge pins in the press fit of the two holes allowing it to be sturdy </li>
+          <li>Used loctite in the thraded handle causign teh handle to be very sturdy</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Results</h3>
+        <ul>
+          <li>Allows the worker to install teh hammer spring at a much faster rate</li>
+          <li>Aluminium parts are much cheaper causing the overall cost of manufacturing to be low</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="experience-details-container">
+  <div class="detail-container color-container">
+    <h2 class="experience-sub-title project-title">Electrical Machine Guard</h2>
+
+    <!-- Images -->
+    <div class="article-container project-images">
+      <img src="./assets/Caterpillar.1.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/Catwrpillar.2.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/Cataerpilar.3.png" alt="Project 1 View 3" class="project-img">
+    </div>
+
+    <!-- Columns -->
+    <div class="project-columns">
+      <div class="column">
+        <h3>What?</h3>
+        <ul>
+          <li>Able to shut off the machine quick during emergencies
+            preventing deadly injuries to factory workers
+          </li>
+          <li>Protects workers with a switch interface allows to turn off with a flip of a switch</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>How?</h3>
+        <ul>
+          <li>Designed in SolidWorks and 3D printed with PLA allowing a strong,durable, and cheap prodcut</li>
+          <li>Soldered switches through Arduino-coded shutdown</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Results</h3>
+        <ul>
+          <li>Increased factory safety by 43%</li>
+          <li>Lower cost implementation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="experience-details-container">
+  <div class="detail-container color-container">
+    <h2 class="experience-sub-title project-title">GPS for Animals</h2>
+
+    <!-- Images -->
+    <div class="article-container project-images">
+      <img src="./assets/GPS-pic-1.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/GPS-pic-2.png" alt="Project 1 Alternate" class="project-img">
+      <img src="./assets/GPS-pic-3.png" alt="Project 1 View 3" class="project-img">
+    </div>
+
+    <!-- Columns -->
+    <div class="project-columns">
+      <div class="column">
+        <h3>What?</h3>
+        <ul>
+          <li>Able to shut off the machine during emergencies</li>
+          <li>Protects workers with a switch interface</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>How?</h3>
+        <ul>
+          <li>Designed in SolidWorks</li>
+          <li>Soldered switches, Arduino-coded shutdown</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Results</h3>
+        <ul>
+          <li>Increased factory safety by 43%</li>
+          <li>Lower cost implementation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+    </div>
+
+  </div>
+</div>
+</section>
+  </section>
+  <!-- ✅ Certificate Section Starts Here -->
+  <section id="certificates">
+    <p class="section__text__p1">Achievements</p>
+    <h1 class="title">Certificates</h1>
+    
+    <div class="certificate-container">
+      <!-- Certificate Card Example -->
+      <div class="certificate-card">
+        <img src="./assets/certificate1.png" alt="Certificate 1" class="certificate-img">
+        <p>Shop Safety Training</p>
+        <div class="btn-container">
+          <a href="./assets/certificate 1.pdf" target="_blank" class="btn btn-color-1">View</a>
+          <a href="./assets/certificate 1.pdf" download class="btn btn-color-2">Download</a>
+        </div>
+      </div>
+  
+      <div class="certificate-card">
+        <img src="./assets/certificate2.png" alt="Certificate 2" class="certificate-img">
+        <p>GE Aerospace Explore Engineering Job Simulation</p>
+        <div class="btn-container">
+          <a href="./assets/Certifiacte 2.pdf" target="_blank" class="btn btn-color-1">View</a>
+          <a href="./assets/Certifiacte 2.pdf" download class="btn btn-color-2">Download</a>
+        </div>
+      </div>
+      
+      <!-- Add more certificates here -->
+    </div>
+  </section>
+  
+  <section id="Contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+  
+    <div class="contact-info-wrapper">
+      <div class="contact-info-container">
+        <div class="icon-circle">
+          <img src="./assets/email.png" alt="Email icon" class="contact-icon" />
+        </div>
+        <span><a href="mailto:shaudsaha42@gmail.com">shaudsaha42@gmail.com</a></span>
+      </div>
+  
+      <div class="contact-info-container">
+        <div class="icon-circle">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="contact-icon" />
+        </div>
+        <span><a href="https://www.linkedin.com/in/supratim-shaud-ab1480214/" target="_blank">LinkedIn</a></span>
+      </div>
+    </div>
+  </section>
+  </section>
+  <footer>
+    <nav>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">Copyright © 2025 Supratim Shaud. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

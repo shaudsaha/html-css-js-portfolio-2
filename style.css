@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  color: rgb(85, 85, 85);
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 17vh;
+  background-color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+  cursor: default;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-decoration-color: white;
+}
+
+.nav-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Menu */
+#hamburger-nav {
+  display: none;
+}
+.menu-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links.open {
+  max-height: 300px; /* or bigger if needed */
+}
+
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 5px 0;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* section */
+
+section {
+  padding: 4vh 0;
+  margin: 0 10rem;
+  min-height: 100vh; /* allow auto-expansion if needed */
+  box-sizing: border-box;
+}
+
+
+.section-container {
+    display: flex;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto 0;
+    border-radius: 1rem; 
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 400;
+}
+.section__text__p1 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: 200;
+}
+
+.section__text__p2{
+font-size: 1.75rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* button */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Base button styling */
+.btn {
+  font-weight: 600;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+/* First Button: Contact Info (black background) */
+.btn-color-1 {
+  background: black;
+  color: white;
+  border: none;
+}
+
+/* Hover effect for Contact Info */
+.btn-color-1:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+/* Second Button: Download CV (white background with black border) */
+.btn-color-2 {
+  background: white;
+  color: black;
+  border: 0.1rem solid rgb(53, 53, 53);
+}
+
+/* Hover effect for Download CV */
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-container{
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none; /* hidden until you scroll */
+}
+
+
+
+/* About*/
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  margin-top: 2rem; /* or try 3rem for more space */
+  text-align: center;
+  max-width: 800px;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem; /* ✅ no space */
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 500px;
+  width: 500px;
+  margin: auto 0;
+}
+
+.only-about-pic {
+  height: 370px;    /* keep proportions */
+ /* optional: for rounded edges */
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* optional for mobile responsiveness */
+}
+
+.experience-subcontainer {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+  min-width: 300px; /* ✅ important so they stay next to each other */
+}
+
+.details-containers {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+  min-width: 300px;
+}
+
+.experience-content,
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+article {
+  width: 10rem;
+}
+/* ---------- Section Header ---------- */
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.3rem 0 0;
+}
+/* ---------- Outer Container ---------- */
+.experience-details-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ---------- White Card ---------- */
+.detail-container {
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ---------- Project Images ---------- */
+.project-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+  
+
+
+/* Optional: Use this instead for auto-scaling image ratio */
+/*
+.project-img {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+*/
+
+/* ---------- Description Columns ---------- */
+.project-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.column ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 768px) {
+  .project-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-img {
+    max-width: 90%;
+  }
+
+  .project-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+}
+
+/* Contact */
+
+#Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: white;
+}
+
+.section__text__p1 {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem 2rem;
+  border: 1px solid lightgray;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.icon-circle {
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: brightness(0) invert(1); /* ensures white icon */
+}
+
+.contact-info-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.email.icon{
+  height: 2.5rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.footer-copy {
+  color: gray;
+  font-size: 0.9rem;
+}
+.footer-links a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust spacing from text */
+  width: 0%;
+  height: 2px;
+  background-color: grey;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+#certificates {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  width: 300px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certificate-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}

@@ -1,0 +1,25 @@
+/* Big screens (Desktop) */
+@media screen and (min-width: 1201px) {
+  #hamburger-nav {
+    display: none; /* hide the whole hamburger nav */
+  }
+
+  .hamburger-icon {
+    display: none; /* hide hamburger icon */
+  }
+}
+
+/* Small screens (Mobile) */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none; /* hide desktop nav */
+  }
+
+  .hamburger-icon {
+    display: flex; /* show hamburger icon */
+  }
+
+  #hamburger-nav {
+    display: block; /* show hamburger nav */
+  }
+}
