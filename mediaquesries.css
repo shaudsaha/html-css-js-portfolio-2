@@ -1,25 +1,130 @@
-/* Big screens (Desktop) */
-@media screen and (min-width: 1201px) {
-  #hamburger-nav {
-    display: none; /* hide the whole hamburger nav */
-  }
-
-  .hamburger-icon {
-    display: none; /* hide hamburger icon */
-  }
-}
-
-/* Small screens (Mobile) */
+/* --------------- MOBILE & TABLET SCREENS (<=1200px) --------------- */
 @media screen and (max-width: 1200px) {
+  /* Hide desktop nav, show hamburger */
   #desktop-nav {
-    display: none; /* hide desktop nav */
+    display: none;
   }
 
   .hamburger-icon {
-    display: flex; /* show hamburger icon */
+    display: flex;
   }
 
+  /* Hamburger Menu Container */
   #hamburger-nav {
-    display: block; /* show hamburger nav */
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    z-index: 1000;
+  }
+
+  /* Collapsible Menu Links */
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+  }
+
+  .menu-links.open {
+    max-height: 300px;
+    padding: 1rem;
+  }
+
+  /* Section Layout */
+  section {
+    margin: 0 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .section-container,
+  .about-containers,
+  .experience-container,
+  .certificate-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Profile Section */
+  #profile {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.3rem;
+  }
+
+  /* Experience & Coding Cards */
+  .experience-subcontainer,
+  .details-containers {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /* Article container (skills and tools) */
+  .article-container,
+  .experience-content {
+    justify-content: center;
+  }
+
+  /* Project Images */
+  .project-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-img {
+    max-width: 90%;
+  }
+
+  /* Project Columns */
+  .project-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  /* Certificates */
+  .certificate-card {
+    width: 90%;
+  }
+
+  /* Contact Info */
+  .contact-info-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-copy {
+    text-align: center;
   }
 }
